@@ -1,0 +1,104 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: rgba(256,256,256,0.5);
+    text-align: center;
+    border: 1px solid rgba(256,256,256,0.5);
+    cursor: pointer;
+    font-family: ivypresto-headline, serif;
+  }
+  #myBtn:hover {
+    border: 1px solid rgba(256,256,256,1);
+    color:  rgba(256,256,256,1);
+  }
+
+  .frame__content {
+    text-align: center;
+    margin-top: 200px;
+  }
+
+.frame__content-title {
+    margin: 0;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: ivypresto-headline, serif;
+    color: #fff;
+    position: relative;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.frame__content-title::after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    background: #fff;
+    left: 40%;
+    top: 100%;
+}
+
+.frame__content-text {
+    max-width: 600px;
+    font-size: 1rem;
+    margin: 2rem auto 3rem;
+}
+
+.frame__switch-item {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border: 1px solid #fff;
+    font-weight: 300;
+    font-size: 1.85rem;
+    margin: 0 1rem;
+
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.frame__switch-item--current,
+.frame__switch-item:hover,
+.frame__switch-item:focus {
+    text-decoration: none;
+}
+
+.frame__switch-item--current {
+    pointer-events: none;
+    opacity: 1;
+}
+
+.frame__content-text,
+.frame__switch {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.streamHeading{
+  color: blue;
+}

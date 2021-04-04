@@ -39,4 +39,4 @@ document.onload = setTimeout(function(){
     loading.classList.remove('display-none');
     splash = false;
   }
-},7000);
+},4000);

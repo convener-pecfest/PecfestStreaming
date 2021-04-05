@@ -45,4 +45,3 @@ document.onload = setTimeout(function(){
     splash = false;
   }
 },4000);
-

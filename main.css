@@ -103,6 +103,136 @@
 .streamHeading{
 color: blue;
 }
+
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.splash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  z-index: 200;
+  transition: all 0.5s;
+}
+
+.splash div{
+  animation: fadeIn 1s infinite alternate;
+}
+
+
+@keyframes fadeIn{
+  from{
+    opacity: 0%;
+    /* font-size: 40px; */
+  }
+  to{
+    opacity: 100%;
+    /* font-size: 100px; */
+  }
+}
+
+.opacity-zero{
+  opacity: 0  !important;
+}
+
+.display-none{
+  height: 0;
+  width: 0;
+  z-index: -10;
+  display: none !important;
+}
+
+.loading{
+  position: fixed;
+  top: 62vh;
+  left: 46vw;
+  color: rgb(243, 177, 132);
+  font-size: 20px;
+  z-index: 201;
+  /* animation: fadeIn 1s infinite alternate; */
+}
+
+
+/* Pop Up Modal */
+.carousel-inner{
+  height: 100% ;
+  width: 100% ;
+}
+.carousel-item{
+  height: 100% ;
+  width: 100% ;
+}
+.carousel-item img{
+  height: 100% ;
+  width: 100% ;
+  object-fit: fill ;
+}
+.modal-header{
+  padding: 8px;
+  height: 100%;
+  width: 100%;
+}
+#carouselExampleIndicators{
+  height: 720px;
+  width: 720px;
+}
 /* Left Arrow */
 
 #arrowAnimLeft {

@@ -49,7 +49,7 @@
   color: #fff;
   position: relative;
   text-shadow: 0 1px 6px rgba(0,0,0,0.1);
-  bottom: 10rem;
+  bottom: 7rem;
 }
 
 .frame__content-title::after {
@@ -120,7 +120,7 @@ left: 20vh; */
 .arrowLeft {
 width: 5vw;
 height: 5vw;
-border: 2.5vw solid;
+border: 1vw solid;
 border-color: #fff transparent transparent #fff;
 transform: rotate(-45deg);
 }
@@ -146,16 +146,16 @@ position: absolute;
 }
 
 @-webkit-keyframes slideLeft {
-0% { opacity:0; transform: translateX(15vw); }	
-20% { opacity:1; transform: translateX(9vw); }	
-80% { opacity:1; transform: translateX(-9vw); }	
-100% { opacity:0; transform: translateX(-15vw); }	
+0% { opacity:0; transform: translateX(5.25vw); }	
+20% { opacity:1; transform: translateX(3.15vw); }	
+80% { opacity:1; transform: translateX(-3.15vw); }	
+100% { opacity:0; transform: translateX(-5.25vw); }	
 }
 @keyframes slideLeft {
-0% { opacity:0; transform: translateX(15vw); }	
-20% { opacity:1; transform: translateX(9vw); }	
-80% { opacity:1; transform: translateX(-9vw); }	
-100% { opacity:0; transform: translateX(-15vw); }		
+0% { opacity:0; transform: translateX(5.25vw); }	
+20% { opacity:1; transform: translateX(3.15vw); }	
+80% { opacity:1; transform: translateX(-3.15vw); }	
+100% { opacity:0; transform: translateX(-5.25vw); }		
 }
 /* Right Arrow */
 
@@ -174,7 +174,7 @@ left: 20vh; */
 .arrowRight {
 width: 5vw;
 height: 5vw;
-border: 2.5vw solid;
+border: 1vw solid;
 border-color: #fff transparent transparent #fff;
 transform: rotate(135deg);
 }
@@ -200,16 +200,16 @@ position: absolute;
 }
 
 @-webkit-keyframes slideRight {
-0% { opacity:0; transform: translateX(-15vw); }	
-20% { opacity:1; transform: translateX(-9vw); }	
-80% { opacity:1; transform: translateX(9vw); }	
-100% { opacity:0; transform: translateX(15vw); }	
+0% { opacity:0; transform: translateX(-5.25vw); }	
+20% { opacity:1; transform: translateX(-3.15vw); }	
+80% { opacity:1; transform: translateX(3.15vw); }	
+100% { opacity:0; transform: translateX(5.25vw); }	
 }
 @keyframes slideRight {
-0% { opacity:0; transform: translateX(-15vw); }	
-20% { opacity:1; transform: translateX(-9vw); }	
-80% { opacity:1; transform: translateX(9vw); }	
-100% { opacity:0; transform: translateX(15vw); }
+0% { opacity:0; transform: translateX(-5.25vw); }	
+20% { opacity:1; transform: translateX(-3.15vw); }	
+80% { opacity:1; transform: translateX(3.15vw); }	
+100% { opacity:0; transform: translateX(5.25vw); }
 }
 
 /* Up Arrow */
@@ -222,14 +222,14 @@ justify-content: center;
 align-items: center;
 /* border: 2px solid #fff; */
 position: relative;
-bottom: 12vh;
-left: 20vh;
+bottom: 3vh;
+left: 24vh;
 }
 
 .arrowUp {
 width: 5vw;
 height: 5vw;
-border: 2.5vw solid;
+border: 1vw solid;
 border-color: #fff transparent transparent #fff;
 transform: rotate(45deg);
 }
@@ -255,14 +255,14 @@ position: absolute;
 }
 
 @-webkit-keyframes slideUp {
-  0% { opacity:0; transform: translateY(15vw); }	
- 20% { opacity:1; transform: translateY(9vw); }	
- 80% { opacity:1; transform: translateY(-9vw); }	
-100% { opacity:0; transform: translateY(-15vw); }	
+  0% { opacity:0; transform: translateY(5.25vw); }	
+  20% { opacity:1; transform: translateY(3.15vw); }	
+  80% { opacity:1; transform: translateY(-3.15vw); }	
+ 100% { opacity:0; transform: translateY(-5.25vw); }	
 }
 @keyframes slideUp {
-  0% { opacity:0; transform: translateY(15vw); }	
- 20% { opacity:1; transform: translateY(9vw); }	
- 80% { opacity:1; transform: translateY(-9vw); }	
-100% { opacity:0; transform: translateY(-15vw); }	
+  0% { opacity:0; transform: translateY(5.25vw); }	
+  20% { opacity:1; transform: translateY(3.15vw); }	
+  80% { opacity:1; transform: translateY(-3.15vw); }	
+ 100% { opacity:0; transform: translateY(-5.25vw); }	
 }

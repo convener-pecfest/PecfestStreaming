@@ -23,20 +23,22 @@ function removeSplashDisplay(){
   splash.classList.add('display-none');
 
   // Show Pop Up Modal
-  $(document).ready(function() {
-    $('#global-modal').modal('show');
-    $('#myVideo').get(0).pause();
-  });
-//   $ (document).ready(function() {   
-//     if ($ .cookie("popup_1_2") == null) {
-//          $('#global-modal').modal('show');
-//     $ .cookie("popup_1_2", "2");
-//  }
-// });
-    $('#global-modal').on('hidden.bs.modal', function () {
-      $('#myVideo').get(0).play();
+  if(!window.sessionStorage.getItem('done')){  /* Line Changed */
+    $(document).ready(function() {
+      $('#global-modal').modal('show');
+      $('#myVideo').get(0).pause();
     });
-}
+  //   $ (document).ready(function() {   
+  //     if ($ .cookie("popup_1_2") == null) {
+  //          $('#global-modal').modal('show');
+  //     $ .cookie("popup_1_2", "2");
+  //  }
+  // });
+      $('#global-modal').on('hidden.bs.modal', function () {
+        $('#myVideo').get(0).play();
+      });
+      window.sessionStorage.setItem('done','1');    /* Line Changed */
+  }
 //   
 function removeSplashOpacity(){
   splash.classList.add('opacity-zero');

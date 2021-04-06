@@ -45,3 +45,7 @@ document.onload = setTimeout(function(){
     splash = false;
   }
 },4000);
+
+function goBack() {
+  window.history.back();
+}

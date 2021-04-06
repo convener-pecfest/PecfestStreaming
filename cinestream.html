@@ -65,13 +65,23 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand mb-0 h1" href="#">
-        <img src="./assets/Dancing Man.png" width="30" height="30" alt="">
-        <strong>PECFEST 2020-21</strong>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark "> 
+      <a class="navbar-brand" href="./index.html">
+          <img class="brand-logo" src="assets/Screenshot 2021-04-06 at 4.35.17 PM.png" height="30" width="220" alt="logo"/>
       </a>
-      <strong style="color: white;font-size: larger">VIRTUAL CAMPUS - AUDITORIUM</strong>
-      <a class="nav-item nav-link active" href="./index.html" style="color: white; font-size: larger;">Home <span class="sr-only">(current)</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="CollapsibleNavbar" style="color: white;">
+          <ul class="navbar-nav text-center navbar-right">
+              <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+                  <a class="nav-link "  href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+                <a class="nav-link" onclick="goBack()">Go Back</a>
+            </li>
+          </ul>
+      </div>
     </nav>
     <!-- Optional: some overlay text to describe the video -->
     <div class="container">

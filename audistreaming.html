@@ -5,7 +5,7 @@
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/Dancing Man.png" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     <link
       rel="stylesheet"
@@ -27,7 +27,19 @@
 
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
-  <body style="background-color: bisque">
+  <body style="background-color: black;">
+    <div class="mobile">
+      <div class="container" style="padding: 50px;"> 
+        <div style="text-align: center; color: white;">
+        <h3>Please visit desktop version</h3>
+        </div>
+        <div  style="text-align: center;">
+        <img class="mobImg" src="./assets/Dancing Man.png" alt="Girl in a jacket" >
+        </div>
+        <img>
+      </div>
+    </div> 
+    <div class="desktop">
     <h1 class="streamHeading">Live Stream:</h1>
 
     <iframe
@@ -39,6 +51,8 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
+    </div>
+    
     <script src="main.js"></script>
   </body>
 </html>

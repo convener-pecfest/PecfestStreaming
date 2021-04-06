@@ -5,43 +5,240 @@
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/Dancing Man.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>PECFEST</title>
 
         <link rel="stylesheet" type="text/css" href="main.css">
- 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
-    <body>
-      <video autoplay muted loop id="myVideo">
+    <body style="background-color: black;">
+      <div class="mobile">
+        <div class="container" style="padding: 50px;"> 
+          <div style="text-align: center; color: white;">
+          <h3>Please visit desktop version</h3>
+          </div>
+          <div  style="text-align: center;">
+          <img class="mobImg" src="./assets/Dancing Man.png" alt="Girl in a jacket" >
+          </div>
+          <img>
+        </div>
+      </div>
+      <div class="desktop">
+      <div class="splash">
+        <div>
+          <img src="assets/Dancing Man.png" style="height: 20vh; width: 20vw;">
+        </div>
+      </div>
+
+      <div class="loading display-none">Loading...</div>
+      <video autoplay muted id="myVideo">
         <source src="./assets/DJI_0039-1.mp4" type="video/mp4">
       </video>
-      
+      <!-- <nav class="navbar navbar-dark bg-dark" style="opacity: 0.8;">
+        <a class="navbar-brand" href="">
+          <img src="./assets/Dancing Man.png" width="30" height="30" alt="">
+          <strong>PECFEST 2020-21</strong>
+        </a>
+        <strong style="color: white;font-size: larger">VIRTUAL CAMPUS</strong>
+        <a class="nav-item nav-link active" href="./index.html" style="color: white; font-size: larger;">Home <span class="sr-only">(current)</span></a>
+      </nav> -->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark "> 
+        <a class="navbar-brand" href="./index.html">
+            <img class="brand-logo" src="assets/Screenshot 2021-04-06 at 4.35.17 PM.png" height="30" width="220" alt="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="CollapsibleNavbar" style="color: white;">
+            <ul class="navbar-nav text-center navbar-right">
+                <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+                    <a class="nav-link "  href="./index.html">Home</a>
+                </li>
+                <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+                  <a class="nav-link "  href="./schedule.html">Schedule</a>
+                </li>
+                
+            </ul>
+        </div>
+      </nav>
+
+      <div class="fade-in">
       <div class="frame__content">
-        <h2 class="frame__content-title">PECFEST 2021</h2>
+        <h2 class="frame__content-title">PECFEST 2020-21</h2>
+        <div class="row" style="margin-top: 20px;">
           
-          <div class="row" style="margin-top: 20px;">
-            <div class="col-md-4 col-sm-6">
-            <a href="./auditorium.html"><button id="myBtn">Enter Auditorium</button></a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <a href="./MettaPark.html"><button id="myBtn" >Enter meta parking</button></a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <a href="./pecmarket.html"><button id="myBtn" >Enter pec market </button></a>
+          <div class="col-md-4 col-sm-6">
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="arrowAnimUp center">
+              <div class="arrowSlidingUp">
+                <div class="arrowUp"></div>
+              </div>
+              <div class="arrowSlidingUp delay1">
+                <div class="arrowUp"></div>
+              </div>
+              <div class="arrowSlidingUp delay2">
+                <div class="arrowUp"></div>
+              </div>
+              <div class="arrowSlidingUp delay3">
+                <div class="arrowUp"></div>
+              </div>
             </div>
           </div>
+          <div class="col-md-4 col-sm-6">
+          </div>
+          </div>
+          <div class="row" style="margin-top: 20px;">
+            
+            <div class="col-md-4 col-sm-6">
+            </div>
+            <div class="col-md-4 col-sm-6">
+            </div>
+            <div class="col-md-4 col-sm-6">
+            </div>
+          </div>
+          
+          <div class="row" style="margin-top: 20px;"> 
+            <div class="col-md-4 col-sm-6">
+              <div id="arrowAnimLeft">
+                <div class="arrowSlidingLeft">
+                  <div class="arrowLeft"></div>
+                </div>
+                <div class="arrowSlidingLeft delay1">
+                  <div class="arrowLeft"></div>
+                </div>
+                <div class="arrowSlidingLeft delay2">
+                  <div class="arrowLeft"></div>
+                </div>
+                <div class="arrowSlidingLeft delay3">
+                  <div class="arrowLeft"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <a href="straight.html"><button id="myBtn" >Go Straight
+               </button></a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div id="arrowAnimRight">
+                <div class="arrowSlidingRight">
+                  <div class="arrowRight"></div>
+                </div>
+                <div class="arrowSlidingRight delay1">
+                  <div class="arrowRight"></div>
+                </div>
+                <div class="arrowSlidingRight delay2">
+                  <div class="arrowRight"></div>
+                </div>
+                <div class="arrowSlidingRight delay3">
+                  <div class="arrowRight"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 20px;"> 
+            <div class="col-md-4 col-sm-6">
+            </div>
+            <div class="col-md-4 col-sm-6">
+            </div>
+            <div class="col-md-4 col-sm-6">
+            </div>
+          </div>
+          <div class="row" style="margin-top: 20px;"> 
+            <div class="col-md-4 col-sm-6">
+              <a href="left.html"><button id="myBtn" style="position:relative;left:25px">Go Left
+              </button></a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <a href="right.html"><button id="myBtn" >Go Right
+              </button></a>
+            </div>
+          </div>
+          
+
         </div>
         </div>
-     
+      </div>
       
-       
+               <!-- Pop Up Modal -->
+               <div class="modal fade" id="global-modal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <!--Modal Content-->
+                  <div class="modal-content">
+                    <!-- <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    
+                      <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                      </ul>
+                      
+                      
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./assets/upmanyu.png" alt="Los Angeles" width="720" height="720">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/upmanyu.png" alt="Chicago" width="720" height="720">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/upmanyu.png" alt="New York" width="720" height="720">
+                        </div>
+                      </div>
+                      
+                      
+                      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div> -->
+                    <div class="mySlides fade">
+                      
+                      <img src="./assets/upmanyu.png" style="width:100%">
+                      
+                    </div>
+                    
+                    <div class="mySlides fade">
+                     
+                      <img src="./assets/upmanyu.png" style="width:100%">
+                      
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      
+                      <img src="./assets/upmanyu.png" style="width:100%">
+                    </div>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    </div>
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div>
+             <!-- --------- -->
+            </div>
       <script src="main.js"></script>
     </body>
   </html>

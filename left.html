@@ -38,21 +38,43 @@
         </div>
         <img>
       </div>
-    </div> 
+    </div>  
     <div class="desktop">
-    <h1 class="streamHeading">Live Stream:</h1>
-
-    <iframe
-      width="852"
-      height="480"
-      src="https://www.youtube.com/embed/OGMm7g0tdRA"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <video autoplay muted  id="myVideo">
+      <source src="./assets/DJI_0041-1.mp4" type="video/mp4" />
+    </video>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark "> 
+      <a class="navbar-brand" href="./index.html">
+          <img class="brand-logo" src="assets/Screenshot 2021-04-06 at 4.35.17 PM.png" height="30" width="220" alt="logo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="CollapsibleNavbar" style="color: white;">
+          <ul class="navbar-nav text-center navbar-right">
+            <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+              <a class="nav-link "  href="./schedule.html">Schedule</a>
+            </li>
+              <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+                  <a class="nav-link "  href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+                <a class="nav-link" onclick="goBack()">Go Back</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="frame__content">
+      <h2 class="frame__content-title">PECFEST 2020-21</h2>
+      <div class="container">
+      <div class="row justify-content-center" style="margin-top: 20px">
+        <div class="col-md-4 col-sm-6">
+          <a href="./mainstage.html"><button id="myBtn">Main Stage</button></a>
+        </div>
+      </div>
     </div>
-    
+  </div>
+</div>
     <script src="main.js"></script>
   </body>
 </html>

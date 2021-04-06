@@ -39,6 +39,7 @@ function removeSplashDisplay(){
       });
       window.sessionStorage.setItem('done','1');    /* Line Changed */
   }
+}
 //   
 function removeSplashOpacity(){
   splash.classList.add('opacity-zero');

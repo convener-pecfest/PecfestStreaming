@@ -344,16 +344,18 @@ position: absolute;
 
 /* Up Arrow */
 
-#arrowAnimUp {
+.arrowAnimUp {
 width: 10vw;
 height: 10vh;
 display: flex;
 justify-content: center;
 align-items: center;
-/* border: 2px solid #fff; */
 position: relative;
 bottom: 3vh;
-left: 24vh;
+
+}
+.center{
+  margin: auto
 }
 
 .arrowUp {
@@ -396,3 +398,4 @@ position: absolute;
   80% { opacity:1; transform: translateY(-3.15vw); }	
  100% { opacity:0; transform: translateY(-5.25vw); }	
 }
+

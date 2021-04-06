@@ -49,3 +49,4 @@ document.onload = setTimeout(function(){
 function goBack() {
   window.history.back();
 }
+

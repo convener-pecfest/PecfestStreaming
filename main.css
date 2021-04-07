@@ -465,14 +465,14 @@ dot {
   width: 50%;
 }
 
-@media (min-width: 1100px){
+@media (min-width: 1024px){
   .mobile{
     display: none;
   }
   
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1024px){
   .desktop{
     display: none;
   }

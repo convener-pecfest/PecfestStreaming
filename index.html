@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" href="./assets/Dancing Man.png" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -15,6 +16,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>PECFEST Virtual Tour</title>
@@ -22,15 +25,18 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
-    <body style="background-color: black;">
-      <div class="mobile">
-        <div class="container" style="padding: 50px;"> 
+    <body style="background-color: black !important;">
+      <div class="mobile" style="margin-top: 100px;" >
+        <div class="container" >
           <div style="text-align: center; color: white;">
-          <h3>Please visit desktop version</h3>
-          </div>
-          <div  style="text-align: center;">
+            <h3>PECFEST 2020-21 Virtual Tour</h3>
+            </div>
+          <div  style="text-align: center; margin-top: 40px;" >
           <img class="mobImg" src="./assets/Dancing Man.png" alt="Girl in a jacket" >
           </div>
+          <div style="text-align: center; color: white;  margin-top: 40px;">
+            <h3>Please switch to Desktop Version</h3>
+            </div>
           <img>
         </div>
       </div>
@@ -42,7 +48,7 @@
       </div>
 
       <div class="loading display-none">Loading...</div>
-      <video autoplay muted id="myVideo">
+      <video autoplay muted id="myVideo" class="bg-video">
         <source src="./assets/DJI_0039-1.mp4" type="video/mp4">
       </video>
       <!-- <nav class="navbar navbar-dark bg-dark" style="opacity: 0.8;">
@@ -208,7 +214,7 @@
                         <span class="carousel-control-next-icon"></span>
                       </a>
                     </div> -->
-                    <div class="mySlides fade">
+                     <div class="mySlides fade">
                       
                       <img src="./assets/upmanyu.png" style="width:100%">
                       
@@ -233,12 +239,13 @@
                     </div>
                     
                     
-                    
+                   
                   </div>
                 </div>
               </div>
              <!-- --------- -->
             </div>
-      <script src="main.js"></script>
+      <script src="main.js">
+      </script>
     </body>
   </html>

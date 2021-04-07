@@ -479,4 +479,27 @@ dot {
   .modal-dialog{
     display: none;
   }
+  body{
+    background: none !important;
+  }
+}
+.cinema {
+  background-image: url("./assets/cinema.jpg");
+  width: 100vw;
+  height: 100vh; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  } 
+.navbar{
+  overflow: auto;
+}
+.bg-video{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

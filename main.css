@@ -503,3 +503,56 @@ dot {
   bottom: 0;
   right: 0;
 }
+
+.cinemaaudi {
+  background-image: url("./assets/set1-7.jpg");
+  width: 100vw;
+  height: 100vh; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  } 
+  .cinemaoat {
+    background-image: url("./assets/set2.jpg");
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    } 
+
+  .cinemafunstage {
+    background-image: url("./assets/set3-7.jpg");
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    } 
+      
+  .cinemamainstage {
+    background-image: url("./assets/set4.jpg");
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    } 
+
+  .cinemanab {
+    background-image: url("./assets/set5-R.jpg");
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    } 
+
+  .cinemacc {
+    background-image: url("./assets/set6.jpg");
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    } 

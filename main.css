@@ -23,17 +23,18 @@
   padding: 10px;
   border: none;
   background: transparent;
-  color: rgba(256,256,256,0.5);
+  color: white;
   text-align: center;
-  border: 1px solid rgba(256,256,256,0.5);
+  border: 1px solid rgba(256,256,256,1);
+  border-radius: 2px;
   cursor: pointer;
   font-family: ivypresto-headline, serif;
 }
 #myBtn:hover {
-  border: 1px solid rgba(256,256,256,1);
-  color:  rgba(256,256,256,1);
+  color: black;
+  background: white;
+  text-decoration: none;
 }
-
 .frame__content {
   text-align: center;
   margin-top: 200px;
@@ -556,3 +557,4 @@ dot {
     background-repeat: no-repeat;
     position: relative;
     } 
+  

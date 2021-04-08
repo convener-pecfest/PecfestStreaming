@@ -65,7 +65,6 @@ function goBack() {
 }
 var vid = document.getElementById("myVideo");
 vid.onpause =function() {
-    alert("hi");
     document.getElementById(mybtn).style.background = "white";
     document.getElementById(mybtn).style.color = "black";
   

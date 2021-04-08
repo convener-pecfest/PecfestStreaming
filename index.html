@@ -7,6 +7,10 @@
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" href="./assets/Dancing Man.png" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -15,35 +19,40 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>PECFEST</title>
+    <title>PECFEST Virtual Tour</title>
 
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
-    <body style="background-color: black;">
-      <div class="mobile">
-        <div class="container" style="padding: 50px;"> 
+    <body style="background-color: black !important;">
+      <div class="mobile" style="margin-top: 100px;" >
+        <div class="container" >
           <div style="text-align: center; color: white;">
-          <h3>Please visit desktop version</h3>
-          </div>
-          <div  style="text-align: center;">
+            <h3>PECFEST 2020-21 Virtual Tour</h3>
+            </div>
+          <div  style="text-align: center; margin-top: 40px;" >
           <img class="mobImg" src="./assets/Dancing Man.png" alt="Girl in a jacket" >
           </div>
+          <div style="text-align: center; color: white;  margin-top: 40px;">
+            <h3>Please switch to Laptop to access</h3>
+            </div>
           <img>
         </div>
       </div>
       <div class="desktop">
       <div class="splash">
         <div>
-          <img src="assets/Dancing Man.png" style="height: 20vh; width: 20vw;">
+          <img src="assets/Dancing Man.png" style="height: 20vh; width: 15vw;">
         </div>
       </div>
 
       <div class="loading display-none">Loading...</div>
-      <video autoplay muted id="myVideo">
-        <source src="./assets/DJI_0039-1.mp4" type="video/mp4">
+      <video autoplay muted id="myVideo" class="bg-video">
+        <source src="./assets/index.mp4" type="video/mp4">
       </video>
       <!-- <nav class="navbar navbar-dark bg-dark" style="opacity: 0.8;">
         <a class="navbar-brand" href="">
@@ -53,9 +62,9 @@
         <strong style="color: white;font-size: larger">VIRTUAL CAMPUS</strong>
         <a class="nav-item nav-link active" href="./index.html" style="color: white; font-size: larger;">Home <span class="sr-only">(current)</span></a>
       </nav> -->
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark "> 
-        <a class="navbar-brand" href="./index.html">
-            <img class="brand-logo" src="assets/Screenshot 2021-04-06 at 4.35.17 PM.png" height="30" width="220" alt="logo"/>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark " style="padding-top: 2px;padding-bottom: 2px;"> 
+        <a class="navbar-brand" style="padding-top: 0px; padding-bottom: 0px;" href="./index.html">
+            <img class="brand-logo"  src="assets/Screenshot 2021-04-06 at 4.35.17 PM.png" height="50" width="170" alt="logo"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -66,7 +75,7 @@
                     <a class="nav-link "  href="./index.html">Home</a>
                 </li>
                 <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
-                  <a class="nav-link "  href="./schedule.html">Schedule</a>
+                  <a class="nav-link "  href="./assets/schedule.pdf">Schedule</a>
                 </li>
                 
             </ul>
@@ -127,7 +136,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="straight.html"><button id="myBtn" >Go Straight
+              <a href="gostraight.html"><button id="myBtn" >Go Straight
                </button></a>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -157,13 +166,13 @@
           </div>
           <div class="row" style="margin-top: 20px;"> 
             <div class="col-md-4 col-sm-6">
-              <a href="left.html"><button id="myBtn" style="position:relative;left:25px">Go Left
+              <a href="goleft.html"><button id="myBtn" style="position:relative;left:25px">Go Left
               </button></a>
             </div>
             <div class="col-md-4 col-sm-6">
             </div>
             <div class="col-md-4 col-sm-6">
-              <a href="right.html"><button id="myBtn" >Go Right
+              <a href="goright.html"><button id="myBtn" >Go Right
               </button></a>
             </div>
           </div>
@@ -208,7 +217,7 @@
                         <span class="carousel-control-next-icon"></span>
                       </a>
                     </div> -->
-                    <div class="mySlides fade">
+                     <!--mmmmm <div class="mySlides fade">
                       
                       <img src="./assets/upmanyu.png" style="width:100%">
                       
@@ -230,15 +239,66 @@
                       <span class="dot"></span> 
                       <span class="dot"></span> 
                     </div>
+                    </div> -->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                      </ol>
+                  
+                      <!-- Wrapper for slides -->
+                      <div class="carousel slide" id="MyCarousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        
+                        <div class="carousel-inner">
+                          <div class="item active">
+                          <img src="./assets/STARS.jpg" alt="First slide">
+                      </div>
+                          <div class="item">
+                            <img src="./assets/zakir.jpg" alt="Second slide">
+                        </div>
+                            <div class="item">
+                                <img  src="./assets/upmanyu.png" alt="Third slide">
+                            </div>
+                            <div class="item">
+                              <img src="./assets/anuv.JPG" alt="Fourth slide">
+                          </div>
+                            <div class="item">
+                                <img src="./assets/rahul.jpg" alt="Fifth slide">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/ankur.png" alt="Sixth slide">
+                            </div>
+                            <div class="item">
+                              <img src="./assets/yahya.png" alt="Seventh slide">
+                          </div>
+                        </div>
+                        <!-- Controls -->
+                        <a href="#MyCarousel" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
+                        <a href="#MyCarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
                     </div>
-                    
-                    
-                    
+                   
                   </div>
                 </div>
               </div>
              <!-- --------- -->
             </div>
-      <script src="main.js"></script>
+      <script src="main.js">
+      </script>
     </body>
   </html>

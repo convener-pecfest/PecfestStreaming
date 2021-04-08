@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/Dancing Man.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>PECFEST Virtual Tour</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body style="background-color: black !important;">
+    
+      <div class="mobile" style="margin-top: 100px;" >
+        <div class="container" >
+          <div style="text-align: center; color: white;">
+            <h3>PECFEST 2020-21 Virtual Tour</h3>
+            </div>
+          <div  style="text-align: center; margin-top: 40px;" >
+          <img class="mobImg" src="./assets/Dancing Man.png" alt="Girl in a jacket" >
+          </div>
+          <div style="text-align: center; color: white;  margin-top: 40px;">
+            <h3>Please switch to Laptop to access</h3>
+            </div>
+          <img>
+        </div>
+      </div>
+    <div class="desktop">
+    <video autoplay muted  id="myVideo" class="bg-video">
+      <source src="./assets/goleft.mp4" type="video/mp4" />
+    </video>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark " style="padding-top: 2px;padding-bottom: 2px;"> 
+      <a class="navbar-brand" style="padding-top: 0px; padding-bottom: 0px;" href="./index.html">
+        <img class="brand-logo"  src="assets/Screenshot 2021-04-06 at 4.35.17 PM.png" height="50" width="170" alt="logo"/>
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="CollapsibleNavbar" style="color: white;">
+          <ul class="navbar-nav text-center navbar-right">
+            <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+              <a class="nav-link "  href="./assets/schedule.pdf">Schedule</a>
+            </li>
+              <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+                  <a class="nav-link "  href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mr-lg-4 mr-md-0 mr-sm-0">
+                <a class="nav-link" href="./index.html">Go Back</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="frame__content">
+      <h2 class="frame__content-title">PECFEST 2020-21</h2>
+      <div class="container">
+      <div class="row justify-content-center" style="margin-top: 20px">
+        <div class="col-md-4 col-sm-6">
+          <a href="./mainstage.html"><button id="myBtn">Main Stage</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="main.js"></script>
+  </body>
+</html>

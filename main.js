@@ -63,12 +63,12 @@ document.onload = setTimeout(function(){
 function goBack() {
   window.history.back();
 }
-var vid = document.getElementById("myVideo");
-vid.onpause =function() {
-    document.getElementById(mybtn).style.background = "white";
-    document.getElementById(mybtn).style.color = "black";
+// var vid = document.getElementById("myVideo");
+// vid.onpause =function() {
+//     document.getElementById("myBtn").style.background = "white";
+//     document.getElementById("myBtn").style.color = "black";
   
-}
+// }
 
 // $(document).ready(function(){
 //   //loads when document is ready
